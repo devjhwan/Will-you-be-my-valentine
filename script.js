@@ -14,6 +14,9 @@ function yesClicked() {
     attempt(png, jpg);
   }
   if (ask) ask.textContent = 'You said Yes! 💖';
+  // 모든 버튼 제거
+  const buttons = document.querySelectorAll('button');
+  buttons.forEach(b => b.remove());
 }
 
 // No 버튼 이동 및 크기 감소 기능
