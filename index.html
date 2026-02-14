@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Will you be my valentine?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="brand">
+      <h1>Valentine</h1>
+    </header>
+
+    <section class="photo-slot" aria-label="사진 슬롯">
+      <div class="photo-circle">
+        <!-- assets 폴더에 있는 before 이미지를 기본으로 사용합니다. 먼저 PNG, 없으면 JPG로 대체 시도 -->
+        <img id="photo" src="assets/before.png" alt="before" onerror="this.onerror=null;this.src='assets/before.jpg'" />
+      </div>
+    </section>
+
+    <section class="question">
+      <p class="ask">Will you be my valentine?</p>
+      <div class="answers">
+        <button id="yesBtn" class="btn yes" aria-label="Yes">Yes!</button>
+        <button id="noBtn" class="btn no" aria-label="No">No</button>
+      </div>
+    </section>
+
+    <footer class="note">
+      <small>Happy Valentine's Day ❤️</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
